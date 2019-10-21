@@ -21,7 +21,7 @@ body {
 
 h1 {
     font-family: italo;
-    font-size: 5em;
+    font-size: calc(57px + 1.5vw);
     width: 100%;
     text-align: center;
     margin-top: 40px;
