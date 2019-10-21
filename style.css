@@ -126,3 +126,31 @@ h1 {
     background-size: cover;
     margin-bottom: -2px;
 }
+
+.buttons {
+    display: flex;    
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 24px;
+    color: #666;
+    align-content: center;
+}
+
+.buttons .arrow {
+    font-size: 21px; 
+    cursor: pointer;   
+}
+
+.buttons .arrow:hover {
+    color: black;
+}
+
+.buttons .play {
+    font-size: 10px;
+    cursor: pointer;
+    transform: scale(1,1.5);
+}
+
+.buttons .play:hover {
+    color:black;
+}
