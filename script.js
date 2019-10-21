@@ -1,10 +1,8 @@
-console.log('%c "We feel free because we lack the very language to articulate our unfreedom"', "font-size: 21px;line-height:31px;")
-console.log("%c Slavoj Žižek", "font-size: 21px; font-style: italic;")
-
+sniff()
 genera()
-
 window.setInterval(genera, 10000)
 
+//////////// F U N C T I O N S ////////////
 function genera() {
 fetch('tweets.txt')
   .then(response => response.text())
@@ -28,20 +26,19 @@ function randInt(max){
     return Math.round(Math.random() * max)
 }
 
-// https://benmarshall.me/parse-twitter-hashtags/
-
-  // Auto-link Twitter usernames in a string
-  // Usage: mystring.parseUsername()
-  String.prototype.parseUsername = function() {
-    return this.replace(/[@]+[A-Za-z0-9-_]+/g, function( u ) {            
-      return '<span class="sandro">' + u + '</span>' 
-    });
-  };
+String.prototype.parseUsername = function() {
+   return this.replace(/[@]+[A-Za-z0-9-_]+/g, function( u ) {            
+   return '<span class="sandro">' + u + '</span>' 
+  })
+}
   
-  // Auto-link Twitter hashtags in a string
-  // Usage: mystring.parseHashtag()
-  String.prototype.parseHashtag = function() {
-    return this.replace(/[#]+[A-Za-z0-9-_]+/g, function( t ) {            
-      return '<span class="sandro">' + t + '</span>' 
-    });
-  };
+String.prototype.parseHashtag = function() {
+  return this.replace(/[#]+[A-Za-z0-9-_]+/g, function( t ) {            
+    return '<span class="sandro">' + t + '</span>' 
+  })
+}
+
+function sniff() {
+  console.log('%c "We feel free because we lack the very language to articulate our unfreedom"', "font-size: 16px;line-height:31px;")
+  console.log("%c Slavoj Žižek", "font-size: 16px; font-style: italic;")
+}
