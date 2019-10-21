@@ -1,0 +1,127 @@
+/* RESET */
+*, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; -webkit-text-size-adjust: 100%;}
+/* END RESET */
+
+a {
+    color: black;
+    border-bottom: 2px solid #1DA1F2;
+    text-decoration: none;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+@font-face {
+    font-family: "italo";    
+    src: url("ass/Italic.woff") format("woff");
+}
+
+
+h1 {
+    font-family: italo;
+    font-size: 5em;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container {
+    width: 500px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.spiega {
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;    
+    margin-top: 60px;
+}
+
+.spiega p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.tweet {    
+    background-color: white;
+    box-shadow: 0px 8px 31px 1px rgba(189,189,189,1);    
+    margin-top: 50px;    
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family:  Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;    
+    border: 1px solid rgb(225, 232, 237);
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: center;    
+}
+
+.header .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;  
+    background: url("ass/avatar.jpg");  
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.user .name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.user .handle {
+    font-size: 14px;
+    color: rgb(105, 120, 130);
+}
+
+.name .official {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("ass/official.png");
+    background-size: cover;
+    margin-bottom: -2px;
+}
+
+.testo p{
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;    
+}
+
+.testo p .sandro {
+    border: none;
+    color:#1DA1F2;
+}
+
+.info {
+    display: flex;
+    color: #697882;
+    align-content: center;
+    font-size: 14px;
+}
+
+.info .likes {
+    margin-right: 15px;    
+}
+
+.likes .heart {
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background: url(ass/like.png);
+    background-size: cover;
+    margin-bottom: -2px;
+}
